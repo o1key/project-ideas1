@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 15vh 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  background: white;
+
+  padding: 1rem;
+  border-radius: 2rem;
+  max-width: fit-content;
+  margin: 0 auto;
+  border: 1px solid rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+  transform: perspective(55em) rotateX(50deg) rotateY(0deg) rotateZ(-40deg);
+  border-radius: 32px;
+  box-shadow: -4px 4px 0 1px #f9f9fb, 1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    -28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 0.2s ease-in-out transform, 0.2s ease-in-out box-shadow;
+}
+
+
+.container:hover {
+  transform: perspective(75em) rotateX(0);
+  box-shadow: 0 0 0 0 #f9f9fb, 1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    -1px 1px 12px 0 rgba(34, 33, 81, 0.25);
+}
+
+.keyboard {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.keyboard button {
+  min-width: 4rem;
+  aspect-ratio: 1/0.75;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 199, 239);
+  font-size: 1rem;
+}
+
+.keyboard button:hover {
+  background: white;
+
+  font-weight: bold;
+}
+
+.keyboard button:focus {
+  outline: #4646d6;
+  border-color: #4646d6;
+  color: #4646d6;
+  font-weight: bold;
+}
+
+
+.result {
+  height: 100px;
+  justify-content: right;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+  color: white;
+  min-height: 3rem;
+  padding-right: 0.5rem;
+}
+
+.history {
+  text-align: right;
+  margin: 0 20px;
+  padding-top: 20px;
+  color: #919191;
+}
+
+.output {
+  text-align: right;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
