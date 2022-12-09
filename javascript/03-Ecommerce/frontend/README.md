@@ -10,3 +10,12 @@
 6. Npm install live-server
 7. Add start command as live-server src --verbose
 8. Run npm start
+
+## II. Design Website
+
+1. Create style.css
+2. Link style.css to index.html
+3. Create div.grid-container
+4. Create header, main and footer
+5. Style html, body
+6. Style grid-container, header, main and footer
