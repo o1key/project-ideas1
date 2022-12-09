@@ -57,3 +57,15 @@
 8. build parsedUrl and compare with routes
 9. if route exists render it, else render Error404
 10. create screens/Error404.js and render error message
+
+## VI. Create Node.js Server
+
+1. run npm init in root Amazon folder
+2. npm install express
+3. create server.js
+4. add start command as node backend/server.js
+5. require express
+6. move data.js from frontend to backend
+7. create route for /api/product
+8. return products in data.js
+9. run npm start
