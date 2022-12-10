@@ -69,3 +69,11 @@
 7. create route for /api/product
 8. return products in data.js
 9. run npm start
+
+## VII. Load Products From Backend
+
+1. edit HomeScreen.js
+2. make render async
+3. fetch products from '/api/products' in render()
+4. make router() async and call await HomeScreen.render()
+5. use cors on backend
