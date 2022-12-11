@@ -112,3 +112,11 @@
 7. set extends to airbnb-base
 8. set parserOptions to ecmaVersion 11 and sourceType to module
 9. set rules for no-console to 0 to ignore linting error
+
+## XI. Install VSCode Extension
+
+1. JavaScript (ES6) code snippets
+2. ES7 React/Redux/GraphQL/React-Native snippets
+3. Prettier - Code formatter
+4. HTML&LESS grammar injections
+5. CSS Peek
