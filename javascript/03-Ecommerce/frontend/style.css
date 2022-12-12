@@ -7,7 +7,10 @@
   --color-6: #ffc000;
   --color-7: #444444;
   --color-8: #f8f8f8;
-  --color-10: #404040;
+  --color-8: #f8f8f8;
+  --color-9: #404040;
+  --color-10: #40c040;
+  --color-11: #c04040;
 }
 
 * {
@@ -33,14 +36,13 @@ button {
 button {
   font: 1.6rem helvetica;
   padding: 1rem;
-  border: 0.1rem var(--color-9) solid;
+  border: 0.1rem var(--color-3) solid;
   border-radius: 0.5rem;
 }
 
-
 input:hover,
 button:hover {
-  border: 0.1rem var(--color-10) solid;
+  border: 0.1rem var(--color-9) solid;
 }
 
 button.primary {
@@ -49,6 +51,14 @@ button.primary {
 
 .fw {
   width: 100%;
+}
+
+.success {
+  color: var(--color-10)
+}
+
+.error {
+  color: var(--color-11)
 }
 
 a:hover {
