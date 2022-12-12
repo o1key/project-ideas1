@@ -6,6 +6,8 @@
   --color-5: #000000;
   --color-6: #ffc000;
   --color-7: #444444;
+  --color-8: #f8f8f8;
+  --color-10: #404040;
 }
 
 * {
@@ -22,6 +24,31 @@ html {
 a {
   text-decoration: none;
   color: var(--color-5);
+}
+
+button {
+  cursor: pointer;
+}
+
+button {
+  font: 1.6rem helvetica;
+  padding: 1rem;
+  border: 0.1rem var(--color-9) solid;
+  border-radius: 0.5rem;
+}
+
+
+input:hover,
+button:hover {
+  border: 0.1rem var(--color-10) solid;
+}
+
+button.primary {
+  background-color: var(--color-6);
+}
+
+.fw {
+  width: 100%;
 }
 
 a:hover {
@@ -78,6 +105,10 @@ footer {
   color: var(--color-2);
 }
 
+.content {
+  padding: 1rem;
+}
+
 /* Products */
 .products {
   display: flex;
@@ -130,4 +161,49 @@ footer {
 .rating span:last-child {
   color: var(--color-7);
   font-size: 1.4rem;
+}
+
+/* Product Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.details-image {
+  flex: 2 1 60rem;
+}
+
+.details-image img {
+  max-width: 60rem;
+  width: 100%;
+}
+
+.details-info,
+.details-action {
+  flex: 1 1 30rem;
+}
+
+.details-info ul,
+.details-action ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.details-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.details-info li,
+.details-action li {
+  margin-bottom: 1rem;
+}
+
+.details-action {
+  border: 0.1rem var(--color-7) solid;
+  border-radius: 0.5rem;
+  background-color: var(--color-8);
+  padding: 1rem;
 }

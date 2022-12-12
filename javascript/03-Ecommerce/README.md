@@ -134,7 +134,7 @@
 9. edit HomeScreen
 10. add div.product-rating and use Rating component
 
-## XII. Product Screen
+## XIII. Product Screen
 
 1. get product id from request
 2. implement /api/product/:id api
@@ -149,3 +149,12 @@
 11. after_render() to add event to the button
 12. redirect user to cart/:product_id
  
+## XIV Product Screen UI
+
+1. create back to result link
+2. create div.details with 3 columns
+3. column 1 for product image
+4. column 2 for product information
+5. column 3 form product action
+6. style .details and all columns
+7. create add to cart button with add-button id
