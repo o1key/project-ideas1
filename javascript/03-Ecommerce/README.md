@@ -165,3 +165,15 @@
 2. add event handler for the button
 3. redirect user to cart/:product_id
 4. implement after_render in index.js
+
+## XVI. Add To Cart Action
+
+1. create CartScreen.js
+2. parseRequestUrl
+3. getProduct(request.id)
+4. addToCart
+5. getCartItems
+6. cartItem.find
+7. if existItem update qty
+8. else add item
+9. setCartItems

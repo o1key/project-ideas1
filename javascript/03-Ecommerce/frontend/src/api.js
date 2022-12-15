@@ -11,7 +11,6 @@ export const getProduct = async (id) => {
         "Content-Type": "application/json",
       },
     });
-    console.log(response, "response");
     if (response.statusText !== "OK") {
       throw new Error(response.data.message);
     }
