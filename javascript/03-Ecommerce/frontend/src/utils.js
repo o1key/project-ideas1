@@ -1,4 +1,4 @@
-const parseRequestUrl = () => {
+export const parseRequestUrl = () => {
   const url = document.location.hash.toLowerCase();
   const request = url.split("/");
 
@@ -9,4 +9,8 @@ const parseRequestUrl = () => {
   };
 };
 
-export default parseRequestUrl;
+export const reRender = async (component) => {
+  document.getElementById("main-container").innerHTML =
+    await component.render();
+  await component.after_render();
+};
