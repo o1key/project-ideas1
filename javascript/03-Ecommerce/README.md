@@ -206,3 +206,16 @@
 13. setCartItems( getCartItems().filter)
 14. if id === parseRequestUrl().id? redirect to '/cart'
 15. else rerender(CartScreen);
+
+## 19. Connect To MongoDB And Create Admin User
+
+1. npm i mongoose
+2. connect to mongodb
+3. create config.js
+4. npm i dotenv
+5. export PORT and MONGODB_URL
+6. create models/userModel.js
+7. create userSchema and userModel
+8. create userRoute
+9. create createAdmin route
+
